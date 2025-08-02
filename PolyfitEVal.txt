@@ -1,0 +1,51 @@
+=== POLYFIT e POLYVAL no MATLAB ===
+
+polyfit e polyval são usados para ajustar e avaliar polinômios a partir de dados.
+
+----------------------------------------
+1. polyfit(x, y, n)
+----------------------------------------
+- Encontra os coeficientes de um polinômio de grau n
+  que melhor se ajusta aos pontos (x, y) por mínimos quadrados.
+
+Exemplo:
+  x = [1 2 3 4];
+  y = [2.2 2.8 3.6 4.5];
+  p = polyfit(x, y, 1);  % Ajuste linear (grau 1)
+
+Resultado:
+  p = [a b] -> representa o polinômio: a*x + b
+
+----------------------------------------
+2. polyval(p, x)
+----------------------------------------
+- Avalia o polinômio de coeficientes p nos valores de x.
+
+Exemplo:
+  x_novo = 1:0.1:4;
+  y_ajustado = polyval(p, x_novo);
+
+Isso gera os valores de y correspondentes ao polinômio ajustado.
+
+----------------------------------------
+3. Exemplo completo com gráfico
+----------------------------------------
+  x = [1 2 3 4];
+  y = [2.2 2.8 3.6 4.5];
+
+  p = polyfit(x, y, 1);
+  x_novo = linspace(1, 4, 100);
+  y_novo = polyval(p, x_novo);
+
+  plot(x, y, 'o');        % pontos originais
+  hold on;
+  plot(x_novo, y_novo);   % linha ajustada
+  legend('Dados', 'Ajuste');
+  hold off;
+
+----------------------------------------
+Resumo:
+- polyfit → encontra os coeficientes
+- polyval → avalia o polinômio usando esses coeficientes
+
+Ideal para ajustes de curvas e previsões simples.
