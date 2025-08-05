@@ -21,3 +21,6 @@ floor (X)
 -----------------------
 mod(x,y): retorna o resto da divisão de x por y.
 -----------------------
+mean(v): retorna o média dos elementos do vetor.
+            retorna a média de cada colunna caso for uma matriz.
+
