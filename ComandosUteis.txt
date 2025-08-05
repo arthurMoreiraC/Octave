@@ -1,0 +1,14 @@
+-----------------------
+det(M): Retorna o determinante da matriz M.
+-----------------------
+M': retorna a matriz transposta (troca linhas pelas colunas) de uma matriz;
+
+x = [
+      1, 2, 3;
+      4, 5, 6;
+      7, 8, 9
+    ];
+disp(x');
+#    1   4   7
+#    2   5   8
+#    3   6   9
