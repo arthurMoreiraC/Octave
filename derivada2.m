@@ -5,15 +5,13 @@ clear; clc;
 printf("Funções:\n\n");
 printf("1. f(x)= 3x^2 − 2x +3\n2. f(x)=x − 5\n3. f(x)=9x^4 + 1\n\n");
 opcao = input('Digite a funcao: ');
+xf = -10:0.1:10;
 switch(opcao)
   case 1
-    xf = -10:0.1:10;
     yf = (3.*xf.^2)-(2.*xf)+3;
   case 2
-    xf = -10:0.1:10;
     yf = xf-5;
   case 3
-    xf = -10:0.1:10;
     yf = (9.*xf.^4)+1;
 endswitch
 xp = [];
