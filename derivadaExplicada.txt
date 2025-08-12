@@ -1,0 +1,10 @@
+Para um termo ax^n, a derivada é n * ax^(n-1). 
+Exemplo:
+Seja o polinômio f(x) = 3x² + 2x + 5. 
+
+    Derivada de 3x²: A regra da potência nos dá 2 * 3x^(2-1) = 6x. 
+
+Derivada de 2x: A regra da potência nos dá 1 * 2x^(1-1) = 2x⁰ = 2. 
+Derivada de 5: A derivada de uma constante é zero. 
+
+Portanto, a derivada do polinômio f(x) é f'(x) = 6x + 2. 
